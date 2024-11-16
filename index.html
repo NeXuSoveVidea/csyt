@@ -1,68 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<title>CSYT</title>
-	<!-- Meta tags -->
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-	<link href="css/font-awesome.css" rel="stylesheet">
-</head>
-
+<html>
 <body>
-	<section class="coming-61-w3l-vv-soon">
-		<!-- /coming-61-w3l-vv-section -->
-		<div class="coming-61-w3l-vv-mian">
-			<div class="wrapper">
-				<div class="coming-61-w3l-vv-top">
-					<div class="coming-61-w3l-vv-info">
-						<h1><strong>CSYT MCC Edition započne za:</strong></h1>
 
-						<ul class="counter-inner">
-							<li><span id="days"></span>Dni</li>
-							<li><span id="hours"></span>Hodiny</li>
-							<li><span id="minutes"></span>Minuty</li>
-							<li><span id="seconds"></span>Sekundy</li>
-						</ul>
-
-					</div>
-
-				</div>
-				<div class="social-coming-soon">
-
-					<div class="social-coming-button">
-						<p class="copy-footer">Československý Youtube Turnaj | 
-							<a href="https://discord.csyt.fun/" target="_blank">Discord</a></p> <a href="https://www.instagram.com/p/Cq6A0HNKGK1/" target="_blank">| Teamy</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script src="js/jquery-3.3.1.min.js"></script>
-		<script>
-			const second = 1000,
-				minute = second * 60,
-				hour = minute * 60,
-				day = hour * 24;
-
-			let countDown = new Date('May 27, 2025 18:00:00').getTime(),
-				x = setInterval(function () {
-
-					let now = new Date().getTime(),
-						distance = countDown - now;
-
-					document.getElementById('days').innerText = Math.floor(distance / (day)),
-						document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
-						document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
-						document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
-
-				}, second)
-		</script>
-	</section>
-
+<audio controls>
+  <source src="images/video.mp3" type="audio/mp3">
+  <source src="images/video.mp4" type="audio/mp3">
+Your browser does not support the audio element.
+</audio>
 
 </body>
-
 </html>
+
